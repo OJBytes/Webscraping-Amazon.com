@@ -8,3 +8,4 @@ Total Sales
 
 -Download the amazon page you want to scrap
 -run the app.py on Terminal: python app.py
+-product would be saved in json files
