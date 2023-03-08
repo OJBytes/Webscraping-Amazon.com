@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 
 '''
 html= download_webpage("examplesite.com"):
-    if html is None:
+    if html is not None:
 print('error getting Html')'''
 
 
