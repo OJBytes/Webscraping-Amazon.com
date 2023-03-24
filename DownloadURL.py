@@ -35,11 +35,11 @@ def download_webpage(url, filename, chunk_size=8192, max_retries=5, retry_delay=
                 return True
 
         except requests.exceptions.RequestException as e:
-            choice = input(f"Error downloading {url}: {e}. Retry? (Y/N/C)")
+            choice = input(f"Error downloading {url}: {e}. Retry? (Y/N)")
             if choice.upper() == "Y":
                 retries += 1
                 time.sleep(retry_delay)
-            elif choice.upper() == "C":
+            elif choice.upper() == "N":
                 sys.exit(0)
             else:
                 raise RuntimeError("User chose to stop retrying")

@@ -1,0 +1,1 @@
+set PATH=D:\Projects\Webscraping\Webscraping_Amazon\env\Scripts;%PATH%
